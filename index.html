@@ -18,8 +18,16 @@
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
-			<input type="text" ng-model="nome_pessoa" placeholder="Digite seu nome">
+		<div class="form-group">
+			<label>Nome</label>
+			<input type="text" ng-model="nome_pessoa" placeholder="Digite seu nome" class="form-control">
+		</div>
+		<div class="form-group">
+			<label>Valor</label>
+			<input type="number" ng-model="numero_pessoa" placeholder="Digite seu nome" class="form-control">
+		</div>
 			<h1>Olá {{nome_pessoa}}</h1>
+			<h1>4 + X = {{4 + numero_pessoa}}</h1>
 		</div>
 	</div>
 </div>
